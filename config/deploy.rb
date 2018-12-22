@@ -3,7 +3,7 @@ lock "~> 3.10.1"
 
 
 set :application, 'RecursionWebsite'
-set :repo_url, 'git@github.com:anand13696/RECursion-Website.git' # Edit this to match your repository
+set :repo_url, 'git@github.com:vjs22334/RECursion-Website.git' # Edit this to match your repository
 set :branch, :aws
 set :deploy_to, '/home/deploy/RecursionWebsite'
 set :pty, true
