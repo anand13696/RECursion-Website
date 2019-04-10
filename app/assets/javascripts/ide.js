@@ -5,10 +5,13 @@ $(document).ready(function() {
     $('.codemirror').each(function(){
       var $el = $(this);
       codemirror_editors[$el.attr('id')] = CodeMirror.fromTextArea($el[0],
-        { mode: "text/html", 
+        { mode: "text/x-csrc", 
           tabMode: "indent",
           textWrapping: false,
-          lineNumbers: true 
+          lineNumbers: true,
+          lineWrapping: true,
+          viewportMargin: Infinity,
+          matchBrackets: true
         });
     });
   });
