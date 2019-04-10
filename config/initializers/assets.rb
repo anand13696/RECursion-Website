@@ -21,5 +21,5 @@ Rails.application.config.assets.precompile += %w( forum.js )
 Rails.application.config.assets.precompile += %w( forumShow.js )
 Rails.application.config.assets.precompile += %w( users.js )
 Rails.application.config.assets.precompile += %w( profile.js )
-
+Rails.application.config.assets.precompile += %w( ide.js )
 
