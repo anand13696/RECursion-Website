@@ -13,6 +13,12 @@ Rails.application.routes.draw do
     get '/users/profile/:nickname' => 'users#profile', as: 'users'
     post '/users/checknickname' => 'users#checknickname', as: ''
 
+    get '/ide/index' => 'ide#index'
+
+    # scope '/ide' do
+    # 	resources :ide, only: [:new, :create]
+    # end
+
 	get '/askrec' => 'home#forum'
 	get '/getstarted' => 'home#getstarted'
 

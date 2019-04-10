@@ -13,7 +13,41 @@
 //= require jquery
 //= require gritter
 //= require jquery_ujs
+//= require bootstrap
 //= require ckeditor/init
 //= require social-share-button
 //= require moment
 //= require fullcalendar
+//= require codemirror
+//= require codemirror/modes/clike
+//= require codemirror/modes/python
+//= require codemirror/modes/ruby
+//= require codemirror/modes/sass
+//= require codemirror/modes/shell
+//= require codemirror/modes/sql
+//= require codemirror/modes/slim
+//= require codemirror/modes/nginx
+//= require codemirror/modes/markdown
+//= require codemirror/modes/javascript
+//= require codemirror/modes/http
+//= require codemirror/modes/htmlmixed
+//= require codemirror/modes/haml
+//= require codemirror/modes/xml
+//= require codemirror/modes/css
+//= require codemirror/modes/yaml
+//= require codemirror/modes/slim
+//= require codemirror/modes/php
+
+
+$(function(){
+  window.codemirror_editors = {};
+  $('.codemirror').each(function(){
+    var $el = $(this);
+    codemirror_editors[$el.attr('id')] = CodeMirror.fromTextArea($el[0],
+      { mode: "text/html", 
+        tabMode: "indent",
+        textWrapping: false,
+        lineNumbers: true 
+      });
+  });
+});

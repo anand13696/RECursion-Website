@@ -19,12 +19,18 @@ gem 'cancancan'
 gem 'ckeditor'
 gem 'will_paginate'
 gem 'social-share-button'
-
+# gem "font-awesome-rails"
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem "gritter", "1.2.0"
 gem 'carrierwave', '~> 1.0'
 gem "mini_magick"
+
+# gem 'simple_form'
+# Code Editor
+# gem 'summernote-rails'
+gem 'codemirror-rails'
+# gem 'jquery-turbolinks'
 # Rails Admin Support
 gem 'rails_admin'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

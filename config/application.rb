@@ -14,6 +14,8 @@ module RecursionWebsite
 	config.assets.precompile += %w( ckeditor/* )	
 	config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
 
+	config.assets.precompile += ["codemirror*", "codemirror/**/*"]
+
 	config.time_zone = 'Kolkata'
   end
 end
