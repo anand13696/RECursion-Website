@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     get '/users/profile/:nickname' => 'users#profile', as: 'users'
     post '/users/checknickname' => 'users#checknickname', as: ''
 
+    get '/ide/index' => 'ide#index'
+
 	get '/askrec' => 'home#forum'
 	get '/getstarted' => 'home#getstarted'
 

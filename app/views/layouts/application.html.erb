@@ -30,6 +30,7 @@
             <li class="<%= " active" if @home_page%>"><a class="tooltipped" href="/" data-tooltip="Home"><i class="material-icons">home</i></a></li>
             <li class="<%= " active" if @events_page%>"><a class="tooltipped" href="/events" data-tooltip="Events"><i class="material-icons">event</i></a></li>
             <li class="<%= " active" if @forum_page%>"><a class="tooltipped" href="/askrec" data-tooltip="AskREC"><i class="material-icons">forum</i></a></li>
+            <li class="<%= " active" if @ide_page%>"><a class="tooltipped" href="/ide/index" data-tooltip="IDE"><i class="material-icons">developer_mode</i></a></li>
             <li class="<%= " active" if @get_started_page%>"><a class="tooltipped" href="/getstarted" data-tooltip="Getting Started"><i class="material-icons">flight_takeoff</i></a></li>
             <% if current_user %>
                 <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><%= image_tag(User.find(current_user.id).image_url, size: '40x40', class:'circle', alt:current_user.nickname)%><i class="material-icons right">arrow_drop_down</i></a></li>
@@ -51,6 +52,7 @@
             <li class="<%= " active" if @home_page%>"><a href="/"><i class="material-icons">home</i>Home</a></li>
             <li class="<%= " active" if @events_page%>"><a href="/events"><i class="material-icons">event</i>Events</a></li>
             <li class="<%= " active" if @forum_page%>"><a href="/askrec"><i class="material-icons">forum</i>AskREC</a></li>
+            <li class="<%= " active" if @ide_page%>"><a href="/ide/index"><i class="material-icons">developer_mode</i>IDE</a></li>
             <li class="<%= " active" if @get_started_page%>"><a href="/getstarted"><i class="material-icons">flight_takeoff</i>Getting Started</a></li>
             <% if current_user %>
                 <% if current_user.nickname.nil? %>

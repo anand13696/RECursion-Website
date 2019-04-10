@@ -20,6 +20,8 @@ gem 'ckeditor'
 gem 'will_paginate'
 gem 'social-share-button'
 
+gem 'codemirror-rails'
+
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem "gritter", "1.2.0"

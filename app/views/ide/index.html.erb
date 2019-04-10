@@ -1,0 +1,20 @@
+<% content_for :heading do %>
+	<a style="text-decoration:none;" href="/">RECursion</a>
+<% end %>
+
+<div class="container">
+	<%= form_for :ide do |f| %>
+		<div class="input-field col s12" style="height:30em;" >
+			<p>Your Code</p><br>
+			<%= f.text_area :code, class: 'codemirror', id:"page_body", rows: 50%>
+		</div>
+		<div class="input-field col s12" >
+			<p>Sample Input</p><br>
+			<%= f.text_area :sample%>
+		</div>
+		<div class="input-field col s12">
+			<button class="btn waves-effect waves-light" type="submit" name="action" id="ideButton"><%= f.submit 'Run' %></button>
+			<br><br>
+		</div>
+	<% end %>
+</div>
